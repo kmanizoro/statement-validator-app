@@ -1,0 +1,1 @@
+mvn sprint-boot:run
