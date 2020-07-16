@@ -1,6 +1,6 @@
-# Rabobank Customer Statement Processor 
+# Test Customer Statement Processor 
 
-Rabobank receives monthly deliveries of customer statement records. This application is used to validate the customer statements.
+Test Bank receives monthly deliveries of customer statement records. This application is used to validate the customer statements.
 
 ### Tech Stack
 
