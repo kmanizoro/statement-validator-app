@@ -4,6 +4,9 @@ import java.util.List;
 
 import com.bank.robo.customer.statement.exception.ResponseCode;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * Statement Response Dto
  * 
@@ -12,8 +15,10 @@ import com.bank.robo.customer.statement.exception.ResponseCode;
  */
 public class StatementResponseDto {
 
-	private ResponseCode result;
-	private List<ErrorRecordDto> errorRecords;
+	ResponseCode result;
+	@Getter
+	@Setter
+	List<ErrorRecordDto> errorRecords;
 
 	public StatementResponseDto() {
 		this(null, null);
@@ -35,13 +40,6 @@ public class StatementResponseDto {
 	public void setResult(ResponseCode result) {
 		this.result = result;
 	}
-
-	public List<ErrorRecordDto> getErrorRecords() {
-		return errorRecords;
-	}
-
-	public void setErrorRecords(List<ErrorRecordDto> errorRecords) {
-		this.errorRecords = errorRecords;
-	}
-
+	
+	
 }

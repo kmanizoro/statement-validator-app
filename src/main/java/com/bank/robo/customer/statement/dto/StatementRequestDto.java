@@ -93,5 +93,5 @@ public class StatementRequestDto {
 	public void setEndBalance(BigDecimal endBalance) {
 		this.endBalance = endBalance;
 	}
-
+	
 }

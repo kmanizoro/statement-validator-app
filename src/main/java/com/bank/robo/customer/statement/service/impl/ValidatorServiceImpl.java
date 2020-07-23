@@ -12,7 +12,6 @@ import com.bank.robo.customer.statement.dto.ErrorRecordDto;
 import com.bank.robo.customer.statement.dto.StatementRequestDto;
 import com.bank.robo.customer.statement.dto.StatementResponseDto;
 import com.bank.robo.customer.statement.exception.ResponseCode;
-import com.bank.robo.customer.statement.exception.ValidationException;
 import com.bank.robo.customer.statement.service.ValidatorService;
 import com.bank.robo.customer.statement.util.CommonUtil;
 
@@ -31,8 +30,7 @@ public class ValidatorServiceImpl implements ValidatorService {
 	 * {@inheritDoc}
 	 */
 	@Override
-	public StatementResponseDto validateCustomerStatements(List<StatementRequestDto> statementRequestDtos)
-			throws ValidationException {
+	public StatementResponseDto validateCustomerStatements(List<StatementRequestDto> statementRequestDtos) {
 		if (logger.isDebugEnabled()) {
 			logger.info("Service validateCustomerStatements Begin");
 		}

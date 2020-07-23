@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bank.robo.customer.statement.dto.StatementRequestDto;
 import com.bank.robo.customer.statement.dto.StatementResponseDto;
-import com.bank.robo.customer.statement.exception.ValidationException;
 import com.bank.robo.customer.statement.service.ValidatorService;
 
 /**
@@ -38,11 +37,10 @@ public class ValidatorContoller {
 	 * 
 	 * @param statementRequestDtos
 	 * @return
-	 * @throws ValidationException
 	 */
 	@PostMapping(value = "/validate")
 	public ResponseEntity<StatementResponseDto> validateCustomerStatements(
-			@RequestBody List<StatementRequestDto> statementRequestDtos) throws ValidationException {
+			@RequestBody List<StatementRequestDto> statementRequestDtos) {
 		if (logger.isDebugEnabled()) {
 			logger.info("validateCustomerStatements started");
 		}
