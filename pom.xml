@@ -18,11 +18,10 @@
 	<properties>
 		<java.version>11</java.version>
 		<sonar.exclusions>
-			**/statement/StatementApplication.java,
 			**/config/*,
 			**/dto/*,
 			**/exception/*,
-			**/service/*,
+			**/service,
 			**/util/*,
 		</sonar.exclusions>
 	</properties>
@@ -52,6 +51,12 @@
 			<version>2.7.0</version>
 		</dependency>
 		<!--End Swager Dependency -->
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
