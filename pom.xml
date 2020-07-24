@@ -17,13 +17,6 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<sonar.exclusions>
-			**/config/*,
-			**/dto/*,
-			**/exception/*,
-			**/service,
-			**/util/*,
-		</sonar.exclusions>
 	</properties>
 
 	<dependencies>
